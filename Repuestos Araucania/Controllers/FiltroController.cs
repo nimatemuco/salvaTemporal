@@ -20,11 +20,12 @@ namespace Repuestos_Araucania.Controllers
         [HttpGet]
         // GET: Filtro
         public async Task<ActionResult> Index()
-        {    //CAMBIOS PARA GIT
+        {
             page = 0;
             return View(await db.productos.Take(20).ToListAsync());
         }
 
+        // POST: Filtro
         [HttpPost]
 
         public string Index(IEnumerable<productos> prod)
