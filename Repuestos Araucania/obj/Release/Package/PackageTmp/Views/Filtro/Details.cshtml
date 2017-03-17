@@ -1,0 +1,50 @@
+﻿@model Repuestos_Araucania.Models.Productos.productos
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>productos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CÓDIGO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CÓDIGO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRECIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRECIO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STOCK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STOCK)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <p class="btn btn-default">@Html.ActionLink("Ir a Inicio", "Index")</p>
+    <p class="btn btn-default">@Html.ActionLink("Volver", "Volver")</p>
+</div>

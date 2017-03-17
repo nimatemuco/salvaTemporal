@@ -1,0 +1,103 @@
+﻿@model IEnumerable<Repuestos_Araucania.Models.Productos.productos>
+
+@{
+    ViewBag.Title = "Productos";
+}
+
+<h2>Productos</h2>
+
+<tr>
+    <th>
+        <p>
+            @Html.ActionLink("Crear Nuevo", "Create")
+        </p>
+    </th>
+</tr>
+<table class="table">
+    <tr>
+        <td>
+            @using (Html.BeginForm("BuscarNombre", "Productos", FormMethod.Get))
+            {
+            <td>
+                <strong>
+                    Buscar por NOMBRE @Html.TextBox("NOMBRE", "", new { @class = "form-control", autofocus = "autofocus" })
+                </strong>
+            </td>
+            }
+            <td>
+                @using (Html.BeginForm("BuscarCódigo", "Productos", FormMethod.Get))
+                {
+                <td>
+                    <strong>
+                        Buscar por CÓDIGO @Html.TextBox("CÓDIGO", "", new { @class = "form-control" })
+                    </strong>
+                </td>
+                }
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <p class="btn btn-default">@Html.ActionLink("Siguiente", "Avanza")</p>
+        <p class="btn btn-default">@Html.ActionLink("Inicio", "Index")</p>
+        <p class="btn btn-default">@Html.ActionLink("Retroceder", "Retrocede")</p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    CÓDIGO
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NOMBRE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PRECIO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.STOCK)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CÓDIGO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NOMBRE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PRECIO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.STOCK)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.ID }) |
+                        @Html.ActionLink("Detalles", "Details", new { id = item.ID }) |
+                        @Html.ActionLink("Eliminar", "Delete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
+
+        </table>

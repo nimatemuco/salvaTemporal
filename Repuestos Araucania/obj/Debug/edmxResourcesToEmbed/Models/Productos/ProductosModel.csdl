@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="repuestosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="productos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CÓDIGO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NOMBRE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PROVEEDOR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="APELLIDO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PRECIO" Type="Double" />
+    <Property Name="MARGEN" Type="Double" />
+    <Property Name="COSTO" Type="Double" />
+    <Property Name="UTILIDAD" Type="Double" />
+    <Property Name="PROM" Type="Double" />
+    <Property Name="MODIFICADO" Type="DateTime" Precision="3" />
+    <Property Name="USUARIO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="STOCK" Type="Double" />
+    <Property Name="MARCAR" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="repuestosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="productos" EntityType="Self.productos" />
+  </EntityContainer>
+</Schema>

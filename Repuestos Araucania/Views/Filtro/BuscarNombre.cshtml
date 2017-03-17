@@ -1,0 +1,108 @@
+﻿@model IList<Repuestos_Araucania.Models.Productos.productos>
+
+@{
+    ViewBag.Title = "Buscar";
+}
+
+<h2>Busqueda por NOMBRE</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            @using (Html.BeginForm("BuscarNombre", "Filtro", FormMethod.Get))
+            {
+            <td>
+                <strong>
+                    Buscar por NOMBRE @Html.TextBox("NOMBRE", "", new { @class = "form-control", autofocus = "autofocus" })
+                </strong>
+            </td>
+            }
+            <td>
+                @using (Html.BeginForm("BuscarCódigo", "Filtro", FormMethod.Get))
+                {
+                <td>
+                    <strong>
+                        Buscar por CÓDIGO @Html.TextBox("CÓDIGO", "", new { @class = "form-control" })
+                    </strong>
+                </td>
+                }
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <p class="btn btn-default">
+            @Html.ActionLink("Inicio", "Index")
+        </p>
+        @using (Html.BeginForm("Index", "Filtro", FormMethod.Post))
+        {
+            <table class="table">
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        CÓDIGO
+                    </th>
+                    <th>
+                        NOMBRE
+                    </th>
+                    <th>
+                        MARCAR
+                    </th>
+                    <th>
+                        PRECIO
+                    </th>
+                    <th>
+                        STOCK
+                    </th>
+                    <th></th>
+                </tr>
+
+                @for (var i = 0; i < Model.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(x => x[i].ID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(x => x[i].CÓDIGO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(x => x[i].NOMBRE)
+                        </td>
+                        <td>
+                            @Html.CheckBoxFor(x => x[i].MARCAR)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(x => x[i].PRECIO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(x => x[i].STOCK)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Detalles", "Details", new { id = Model[i].ID })
+                        </td>
+                    </tr>
+                    @Html.HiddenFor(x => x[i].NOMBRE)
+                }
+
+            </table>
+
+            <div>
+                <input type="submit" value="ACEPTAR" />
+            </div>
+        }

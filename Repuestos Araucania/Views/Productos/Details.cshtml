@@ -1,0 +1,117 @@
+﻿@model Repuestos_Araucania.Models.Productos.productos
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Productos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CÓDIGO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CÓDIGO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APELLIDO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APELLIDO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRECIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRECIO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STOCK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STOCK)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COSTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COSTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UTILIDAD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UTILIDAD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MARGEN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MARGEN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROVEEDOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROVEEDOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MODIFICADO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MODIFICADO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USUARIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USUARIO)        
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <p>
+    <p class="btn btn-default">@Html.ActionLink("Editar", "Edit", new { id = Model.ID })</p>
+    <p class="btn btn-default">@Html.ActionLink("Ir a Inicio", "Index")</p>
+    <p class="btn btn-default">@Html.ActionLink("Volver", "Volver")</p>
+    </p>
+</div>

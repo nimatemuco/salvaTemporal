@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="repuestosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="productos">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="CÓDIGO" Type="nvarchar" MaxLength="255" />
+          <Property Name="NOMBRE" Type="nvarchar" MaxLength="255" />
+          <Property Name="PROVEEDOR" Type="nvarchar" MaxLength="255" />
+          <Property Name="APELLIDO" Type="nvarchar" MaxLength="255" />
+          <Property Name="PRECIO" Type="float" />
+          <Property Name="MARGEN" Type="float" />
+          <Property Name="COSTO" Type="float" />
+          <Property Name="UTILIDAD" Type="float" />
+          <Property Name="PROM" Type="float" />
+          <Property Name="MODIFICADO" Type="datetime" />
+          <Property Name="USUARIO" Type="nvarchar" MaxLength="255" />
+          <Property Name="STOCK" Type="float" />
+          <Property Name="MARCAR" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="repuestosModelStoreContainer">
+          <EntitySet Name="productos" EntityType="Self.productos" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="repuestosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="productos">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="CÓDIGO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="NOMBRE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PROVEEDOR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="APELLIDO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PRECIO" Type="Double" />
+          <Property Name="MARGEN" Type="Double" />
+          <Property Name="COSTO" Type="Double" />
+          <Property Name="UTILIDAD" Type="Double" />
+          <Property Name="PROM" Type="Double" />
+          <Property Name="MODIFICADO" Type="DateTime" Precision="3" />
+          <Property Name="USUARIO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="STOCK" Type="Double" />
+          <Property Name="MARCAR" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="repuestosEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="productos" EntityType="Self.productos" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="repuestosModelStoreContainer" CdmEntityContainer="repuestosEntities">
+          <EntitySetMapping Name="productos">
+            <EntityTypeMapping TypeName="repuestosModel.productos">
+              <MappingFragment StoreEntitySet="productos">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CÓDIGO" ColumnName="CÓDIGO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="APELLIDO" ColumnName="APELLIDO" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARGEN" ColumnName="MARGEN" />
+                <ScalarProperty Name="COSTO" ColumnName="COSTO" />
+                <ScalarProperty Name="UTILIDAD" ColumnName="UTILIDAD" />
+                <ScalarProperty Name="PROM" ColumnName="PROM" />
+                <ScalarProperty Name="MODIFICADO" ColumnName="MODIFICADO" />
+                <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+                <ScalarProperty Name="STOCK" ColumnName="STOCK" />
+                <ScalarProperty Name="MARCAR" ColumnName="MARCAR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
