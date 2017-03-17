@@ -19,25 +19,22 @@ namespace Repuestos_Araucania.Models.Productos
         public string CÓDIGO { get; set; }
         public string NOMBRE { get; set; }
         public string PROVEEDOR { get; set; }
-        public string APELLIDO { get; set; }
+        public string DESCRIPCIÓN { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = false)]
         public Nullable<double> PRECIO { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = false)]
         public Nullable<double> MARGEN { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = false)]
         public Nullable<double> COSTO { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = true)]
-        public Nullable<double> UTILIDAD { get; set; }
-
-        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = true)]
-        public Nullable<double> PROM { get; set; }
+        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = false)]
+        public Nullable<double> NETO { get; set; }
 
         [DataType(DataType.Date)]
-        public DateTime? MODIFICADO { get; set; }
+        public Nullable<System.DateTime> MODIFICADO { get; set; }
         public string USUARIO { get; set; }
         public Nullable<double> STOCK { get; set; }
         public bool MARCAR { get; set; }

@@ -161,13 +161,13 @@ namespace Repuestos_Araucania.Controllers
         // más información vea http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,CÓDIGO,NOMBRE,PRECIO,STOCK")] productos productos)
+        public async Task<ActionResult> Edit([Bind(Include = "ID,CÓDIGO,NOMBRE,PRECIO,STOCK")] productos productos)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(productos).State = EntityState.Modified;
                 await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return RedirectToAction("Volver");
             }
             return View(productos);
         }
@@ -195,7 +195,7 @@ namespace Repuestos_Araucania.Controllers
             productos productos = await db.productos.FindAsync(id);
             db.productos.Remove(productos);
             await db.SaveChangesAsync();
-            return RedirectToAction("Index");
+            return RedirectToAction("Volver");
         }
         public ActionResult BuscarNombre(String NOMBRE)
         {

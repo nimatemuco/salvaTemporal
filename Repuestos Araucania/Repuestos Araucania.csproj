@@ -183,22 +183,22 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Productos\productos.cs">
-      <DependentUpon>productosModel.tt</DependentUpon>
+      <DependentUpon>ProductosModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Productos\productosModel.Context.cs">
+    <Compile Include="Models\Productos\ProductosModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>productosModel.Context.tt</DependentUpon>
+      <DependentUpon>ProductosModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Productos\productosModel.cs">
+    <Compile Include="Models\Productos\ProductosModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>productosModel.tt</DependentUpon>
+      <DependentUpon>ProductosModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Productos\productosModel.Designer.cs">
+    <Compile Include="Models\Productos\ProductosModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>productosModel.edmx</DependentUpon>
+      <DependentUpon>ProductosModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -210,24 +210,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\Productos\productosModel.Context.tt">
+    <Content Include="Models\Productos\ProductosModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>productosModel.edmx</DependentUpon>
-      <LastGenOutput>productosModel.Context.cs</LastGenOutput>
+      <DependentUpon>ProductosModel.edmx</DependentUpon>
+      <LastGenOutput>ProductosModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Productos\productosModel.tt">
+    <Content Include="Models\Productos\ProductosModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>productosModel.edmx</DependentUpon>
-      <LastGenOutput>productosModel.cs</LastGenOutput>
+      <DependentUpon>ProductosModel.edmx</DependentUpon>
+      <LastGenOutput>ProductosModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Productos\productosModel.edmx">
+    <EntityDeploy Include="Models\Productos\ProductosModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>productosModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>ProductosModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Productos\productosModel.edmx.diagram">
-      <DependentUpon>productosModel.edmx</DependentUpon>
+    <Content Include="Models\Productos\ProductosModel.edmx.diagram">
+      <DependentUpon>ProductosModel.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\Mio.pubxml" />
     <None Include="Properties\PublishProfiles\Mio2.pubxml" />
@@ -285,7 +285,6 @@
     <Content Include="Views\Productos\Create.cshtml" />
     <Content Include="Views\Productos\Delete.cshtml" />
     <Content Include="Views\Productos\Details.cshtml" />
-    <Content Include="Views\Productos\Edit2.cshtml" />
     <Content Include="Views\Productos\Index.cshtml" />
     <Content Include="Views\Filtro\Details.cshtml" />
     <Content Include="Views\Filtro\BuscarNombre.cshtml" />

@@ -13,12 +13,11 @@
           <Property Name="CÓDIGO" Type="nvarchar" MaxLength="255" />
           <Property Name="NOMBRE" Type="nvarchar" MaxLength="255" />
           <Property Name="PROVEEDOR" Type="nvarchar" MaxLength="255" />
-          <Property Name="APELLIDO" Type="nvarchar" MaxLength="255" />
+          <Property Name="DESCRIPCIÓN" Type="nvarchar" MaxLength="255" />
           <Property Name="PRECIO" Type="float" />
           <Property Name="MARGEN" Type="float" />
           <Property Name="COSTO" Type="float" />
-          <Property Name="UTILIDAD" Type="float" />
-          <Property Name="PROM" Type="float" />
+          <Property Name="NETO" Type="float" />
           <Property Name="MODIFICADO" Type="datetime" />
           <Property Name="USUARIO" Type="nvarchar" MaxLength="255" />
           <Property Name="STOCK" Type="float" />
@@ -40,12 +39,11 @@
           <Property Name="CÓDIGO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="NOMBRE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="PROVEEDOR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="APELLIDO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPCIÓN" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="PRECIO" Type="Double" />
           <Property Name="MARGEN" Type="Double" />
           <Property Name="COSTO" Type="Double" />
-          <Property Name="UTILIDAD" Type="Double" />
-          <Property Name="PROM" Type="Double" />
+          <Property Name="NETO" Type="Double" />
           <Property Name="MODIFICADO" Type="DateTime" Precision="3" />
           <Property Name="USUARIO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="STOCK" Type="Double" />
@@ -67,12 +65,11 @@
                 <ScalarProperty Name="CÓDIGO" ColumnName="CÓDIGO" />
                 <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
                 <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
-                <ScalarProperty Name="APELLIDO" ColumnName="APELLIDO" />
+                <ScalarProperty Name="DESCRIPCIÓN" ColumnName="DESCRIPCIÓN" />
                 <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
                 <ScalarProperty Name="MARGEN" ColumnName="MARGEN" />
                 <ScalarProperty Name="COSTO" ColumnName="COSTO" />
-                <ScalarProperty Name="UTILIDAD" ColumnName="UTILIDAD" />
-                <ScalarProperty Name="PROM" ColumnName="PROM" />
+                <ScalarProperty Name="NETO" ColumnName="NETO" />
                 <ScalarProperty Name="MODIFICADO" ColumnName="MODIFICADO" />
                 <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
                 <ScalarProperty Name="STOCK" ColumnName="STOCK" />

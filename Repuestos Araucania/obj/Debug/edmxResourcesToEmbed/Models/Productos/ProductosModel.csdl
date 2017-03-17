@@ -8,12 +8,11 @@
     <Property Name="CÓDIGO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="NOMBRE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="PROVEEDOR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="APELLIDO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPCIÓN" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="PRECIO" Type="Double" />
     <Property Name="MARGEN" Type="Double" />
     <Property Name="COSTO" Type="Double" />
-    <Property Name="UTILIDAD" Type="Double" />
-    <Property Name="PROM" Type="Double" />
+    <Property Name="NETO" Type="Double" />
     <Property Name="MODIFICADO" Type="DateTime" Precision="3" />
     <Property Name="USUARIO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="STOCK" Type="Double" />
