@@ -74,7 +74,7 @@ namespace Repuestos_Araucania.Models
         public string Email { get; set; }
 
         [Required]
-        [Display(Name = "NOMBRE Usuario")]
+        [Display(Name = "Nombre Usuario")]
         public string UserName { get; set; }
 
         [Required]

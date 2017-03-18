@@ -65,8 +65,13 @@ namespace Repuestos_Araucania.Controllers
             if (productos == null)
             {
                 return HttpNotFound();
-            }            
-            
+            }
+
+            double x = Math.Pow(10,2);
+
+            productos.MARGEN = Convert.ToDouble(Math.Floor((Convert.ToDouble(productos.COSTO + (productos.COSTO * 50) / 100) / x)) * x);
+            productos.PRECIO = Convert.ToDouble(Math.Floor((Convert.ToDouble(productos.PRECIO) / x)) * x);
+
             return View(productos);
         }
 
