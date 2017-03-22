@@ -86,7 +86,7 @@ namespace Repuestos_Araucania.Controllers
         public ActionResult Avanza()
         {
             if (page == 0) { page = 1; }
-            if (page < 131) { page++; } else { page = 131; }
+            if (page < (db.productos.Count()) / 20) { page++; } else { page = ((db.productos.Count()) / 20) + 1; }
             return View(db.productos.OrderBy(a => a.ID).Skip((page - 1) * 20).Take(20).ToList());
         }
         public ActionResult Retrocede()

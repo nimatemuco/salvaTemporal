@@ -86,7 +86,7 @@ namespace Repuestos_Araucania.Controllers
                 case SignInStatus.RequiresVerification:
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
-                default:
+                default:                    
                     ModelState.AddModelError("", "Intento de inicio no válido.");
                     return View(model);
             }
@@ -137,7 +137,7 @@ namespace Repuestos_Araucania.Controllers
 
         //
         // GET: /Account/Register        
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Manager, Admin")]
         public ActionResult Register()
         {
             ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Admin"))

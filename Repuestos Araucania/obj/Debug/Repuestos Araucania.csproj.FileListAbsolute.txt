@@ -260,3 +260,4 @@ C:\MiGitRepo\salvaTemporal\Repuestos Araucania\bin\es\Microsoft.Owin.Security.Tw
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\obj\Debug\Repuestos Araucania.dll
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\obj\Debug\Repuestos Araucania.pdb
+C:\MiGitRepo\salvaTemporal\Repuestos Araucania\obj\Debug\Repuestos Araucania.csprojResolveAssemblyReference.cache
