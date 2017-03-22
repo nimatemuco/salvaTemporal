@@ -15,7 +15,6 @@ namespace Repuestos_Araucania
             createRolesandUsers();
         }
 
-
         // In this method we will create default User roles and Admin user for login   
         private void createRolesandUsers()
         {
@@ -37,18 +36,15 @@ namespace Repuestos_Araucania
                 //Here we create a Admin super user who will maintain the website                  
 
                 var user = new ApplicationUser();
-                user.UserName = "shanu";
-                user.Email = "syedshanumcain@gmail.com";
-
-                string userPWD = "A@Z200711";
-
+                user.UserName = "ntrujillo.reina";
+                user.Email = "ntrujillo.reina@gmail.com";
+                string userPWD = "nima801211";
                 var chkUser = UserManager.Create(user, userPWD);
-
+                
                 //Add default User to Role Admin   
                 if (chkUser.Succeeded)
                 {
                     var result1 = UserManager.AddToRole(user.Id, "Admin");
-
                 }
             }
 
@@ -64,7 +60,7 @@ namespace Repuestos_Araucania
             // creating Creating Employee role    
             if (!roleManager.RoleExists("Employee"))
             {
-                var role = new Microsoft.AspNet.Identity.EntityFramework.IdentityRole();
+                var role = new IdentityRole();
                 role.Name = "Employee";
                 roleManager.Create(role);
 

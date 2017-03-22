@@ -13,7 +13,7 @@ using System.Data.SqlClient;
 
 namespace Repuestos_Araucania.Controllers
 {
-    [Authorize]
+    [Authorize (Roles="Employee, Admin")]
     public class ProductosController : Controller
     {
         public static int page = 0;

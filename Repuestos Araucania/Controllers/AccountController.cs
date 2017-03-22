@@ -136,8 +136,8 @@ namespace Repuestos_Araucania.Controllers
         }
 
         //
-        // GET: /Account/Register
-        [AllowAnonymous]
+        // GET: /Account/Register        
+        [Authorize(Roles = "Admin")]
         public ActionResult Register()
         {
             ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Admin"))

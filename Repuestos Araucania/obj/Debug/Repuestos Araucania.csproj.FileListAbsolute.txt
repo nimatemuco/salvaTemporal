@@ -258,6 +258,5 @@ C:\MiGitRepo\salvaTemporal\Repuestos Araucania\bin\es\Microsoft.Owin.Security.Fa
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\bin\es\Microsoft.Owin.Security.Google.resources.dll
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\MiGitRepo\salvaTemporal\Repuestos Araucania\obj\Debug\Repuestos Araucania.csprojResolveAssemblyReference.cache
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\obj\Debug\Repuestos Araucania.dll
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\obj\Debug\Repuestos Araucania.pdb

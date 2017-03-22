@@ -8,12 +8,11 @@
     <Property Name="CÓDIGO" Type="nvarchar" MaxLength="255" />
     <Property Name="NOMBRE" Type="nvarchar" MaxLength="255" />
     <Property Name="PROVEEDOR" Type="nvarchar" MaxLength="255" />
-    <Property Name="APELLIDO" Type="nvarchar" MaxLength="255" />
+    <Property Name="DESCRIPCIÓN" Type="nvarchar" MaxLength="255" />
     <Property Name="PRECIO" Type="float" />
     <Property Name="MARGEN" Type="float" />
     <Property Name="COSTO" Type="float" />
-    <Property Name="UTILIDAD" Type="float" />
-    <Property Name="PROM" Type="float" />
+    <Property Name="NETO" Type="float" />
     <Property Name="MODIFICADO" Type="datetime" />
     <Property Name="USUARIO" Type="nvarchar" MaxLength="255" />
     <Property Name="STOCK" Type="float" />
