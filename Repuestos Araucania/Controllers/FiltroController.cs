@@ -15,38 +15,47 @@ namespace Repuestos_Araucania.Controllers
     public class FiltroController : Controller
     {
         public static int page = 0;
-        private repuestosEntities db = new repuestosEntities();
+        repuestosEntities db = new repuestosEntities();
+        ProductosList prolList = new ProductosList();
 
         [HttpGet]
         // GET: Filtro
-        public async Task<ActionResult> Index()
+        public ActionResult Index()
         {
-            page = 0;
-            return View(await db.productos.Take(20).ToListAsync());
+            page = 0; 
+            prolList.product = db.productos.Take(20).ToList();            
+            return View(prolList);
         }
 
         // POST: Filtro
-        [HttpPost]
-
-        public string Index(IEnumerable<productos> prod)
+        [HttpPost] 
+        public ActionResult Index(ProductosList frl)
         {
-            if (prod.Count(x => x.MARCAR) == 0)
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var item in frl.product)
             {
-                return "No ha seleccionado ningún producto!";
-            }
-            else
-            {
-                StringBuilder sb = new StringBuilder();
-                sb.Append("Has seleccionado: ");
-                foreach (productos p in prod)
+                if (item.MARCAR)
                 {
-                    if (p.MARCAR)
-                    {
-                        sb.Append(p.NOMBRE);
-                    }
+                    sb.Append(item.NOMBRE + ",");
                 }
-                return sb.ToString();
             }
+            ViewBag.selectfruits = "Frutas Seleccionadas: " + sb.ToString();
+            return View(frl);
+        }        
+        public ActionResult Seleccion(ProductosList frl)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var item in frl.product)
+            {
+                if (item.MARCAR)
+                {
+                    sb.Append(item.NOMBRE + ",");
+                }
+            }
+            ViewBag.selectfruits = "Frutas Seleccionadas: " + sb.ToString();
+            return View(frl);
         }
 
         // GET: Filtro/Details/5
@@ -69,9 +78,9 @@ namespace Repuestos_Araucania.Controllers
             var proveider = from s in db.productos select s;
             if (!String.IsNullOrEmpty(NOMBRE))
             {
-                proveider = proveider.Where(j => j.NOMBRE.Contains(NOMBRE));
+                prolList.product = db.productos.Where(j => j.NOMBRE.Contains(NOMBRE)).ToList();
             }
-            return View(proveider.Take(20).ToList());
+            return View(prolList);
         }
         public ActionResult BuscarCódigo(String CÓDIGO)
         {
@@ -79,28 +88,30 @@ namespace Repuestos_Araucania.Controllers
             var proveider = from s in db.productos select s;
             if (!String.IsNullOrEmpty(CÓDIGO))
             {
-                proveider = proveider.Where(j => j.CÓDIGO.Contains(CÓDIGO));
-            }
-            return View(proveider.Take(20).ToList());
+                prolList.product = db.productos.Where(j => j.CÓDIGO.Contains(CÓDIGO)).ToList();
+            }            
+            return View(prolList);
         }          
         public ActionResult Avanza()
-        {
+        {            
             if (page == 0) { page = 1; }
             if (page < (db.productos.Count()) / 20) { page++; } else { page = ((db.productos.Count()) / 20) + 1; }
-            return View(db.productos.OrderBy(a => a.ID).Skip((page - 1) * 20).Take(20).ToList());
+            prolList.product = db.productos.OrderBy(a => a.ID).Skip((page - 1) * 20).Take(20).ToList();
+            return View(prolList);            
         }
         public ActionResult Retrocede()
         {
             if (page == 2) { return RedirectToAction("Index", "Filtro"); }
             if (page > 1) { page--; } else { page = 1; }
-            return View(db.productos.OrderBy(a => a.ID).Skip((page - 1) * 20).Take(20).ToList());
+            prolList.product = db.productos.OrderBy(a => a.ID).Skip((page - 1) * 20).Take(20).ToList();
+            return View(prolList);
         }
         public ActionResult Volver()
         {
-            if (page == 0) { return RedirectToAction("Index", "Filtro"); }
-            if (page == 1) { return RedirectToAction("Index", "Filtro"); }
+            if (page == 0 || page == 1) { return RedirectToAction("Index", "Filtro"); }
             if (page > 1) {  } else { page = 1; }
-            return View(db.productos.OrderBy(a => a.ID).Skip((page -1 ) * 20).Take(20).ToList());
+            prolList.product = db.productos.OrderBy(a => a.ID).Skip((page - 1) * 20).Take(20).ToList();
+            return View(prolList);
         }
         protected override void Dispose(bool disposing)
         {

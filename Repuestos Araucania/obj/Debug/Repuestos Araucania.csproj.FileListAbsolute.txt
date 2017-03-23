@@ -261,3 +261,91 @@ C:\MiGitRepo\salvaTemporal\Repuestos Araucania\bin\es\Microsoft.Owin.Security.Mi
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\obj\Debug\Repuestos Araucania.dll
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\obj\Debug\Repuestos Araucania.pdb
 C:\MiGitRepo\salvaTemporal\Repuestos Araucania\obj\Debug\Repuestos Araucania.csprojResolveAssemblyReference.cache
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\csc.exe
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\vbc.exe
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Repuestos Araucania.dll.config
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Repuestos Araucania.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Repuestos Araucania.pdb
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Antlr3.Runtime.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\EntityFramework.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\EntityFramework.SqlServer.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Newtonsoft.Json.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Owin.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.Helpers.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.Mvc.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.Optimization.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.Razor.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.WebPages.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\WebGrease.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.Helpers.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.Mvc.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.Optimization.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.Razor.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.WebPages.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Antlr3.Runtime.pdb
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Newtonsoft.Json.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\EntityFramework.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\EntityFramework.SqlServer.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\System.Web.Razor.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\EntityFramework.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\obj\Debug\Repuestos Araucania.csprojResolveAssemblyReference.cache
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\obj\Debug\Repuestos Araucania.dll
+C:\Users\Nilo Mario\Documents\Visual Studio 2015\Projects\Repuestos Araucania (22-03-2017)\Repuestos Araucania\obj\Debug\Repuestos Araucania.pdb

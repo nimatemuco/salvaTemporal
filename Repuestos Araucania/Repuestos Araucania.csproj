@@ -299,6 +299,7 @@
     <Content Include="Views\Filtro\Volver.cshtml" />
     <Content Include="Views\Productos\Volver.cshtml" />
     <Content Include="Views\Productos\Edit.cshtml" />
+    <Content Include="Views\Filtro\Seleccion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -38,5 +38,11 @@ namespace Repuestos_Araucania.Models.Productos
         public string USUARIO { get; set; }
         public Nullable<double> STOCK { get; set; }
         public bool MARCAR { get; set; }
+        
+    }    
+
+    public class ProductosList
+    {
+        public List<productos> product { get; set; }
     }
 }

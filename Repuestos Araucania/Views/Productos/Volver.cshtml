@@ -1,4 +1,4 @@
-﻿@model IList<Repuestos_Araucania.Models.Productos.productos>
+﻿@model IEnumerable<Repuestos_Araucania.Models.Productos.productos>
 
 @{
     ViewBag.Title = "Productos";
@@ -33,74 +33,58 @@
                     </strong>
                 </td>
                 }
-                <td></td>
-                <td></td>
+                <td>
+                <td>
                 <td></td>
             </tr>
         </table>
         <p class="btn btn-default">@Html.ActionLink("Siguiente", "Avanza")</p>
         <p class="btn btn-default">@Html.ActionLink("Inicio", "Index")</p>
         <p class="btn btn-default">@Html.ActionLink("Retroceder", "Retrocede")</p>
-        @using (Html.BeginForm("Index", "Filtro", FormMethod.Post))
-        {
-            <table class="table">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CÓDIGO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NOMBRE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PRECIO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.STOCK)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
                 <tr>
-                    <th>
-                        ID
-                    </th>
-                    <th>
-                        CÓDIGO
-                    </th>
-                    <th>
-                        NOMBRE
-                    </th>
-                    <th>
-                        MARCAR
-                    </th>
-                    <th>
-                        PRECIO
-                    </th>
-                    <th>
-                        STOCK
-                    </th>
-                    <th></th>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CÓDIGO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NOMBRE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PRECIO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.STOCK)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.ID }) |
+                        @Html.ActionLink("Detalles", "Details", new { id = item.ID }) |
+                        @Html.ActionLink("Eliminar", "Delete", new { id = item.ID })
+                    </td>
                 </tr>
+            }
 
-                @for (var i = 0; i < Model.Count; i++)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(x => x[i].ID)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(x => x[i].CÓDIGO)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(x => x[i].NOMBRE)
-                        </td>
-                        <td>
-                            @Html.CheckBoxFor(x => x[i].MARCAR)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(x => x[i].PRECIO)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(x => x[i].STOCK)
-                        </td>
-                        <td>
-                            @Html.ActionLink("Editar", "Edit", new { id = Model[i].ID }) |
-                            @Html.ActionLink("Detalles", "Details", new { id = Model[i].ID }) |
-                            @Html.ActionLink("Eliminar", "Delete", new { id = Model[i].ID })
-                        </td>
-                    </tr>
-                    @Html.HiddenFor(x => x[i].NOMBRE)
-                }
-
-            </table>
-
-            <div>
-                <input type="submit" value="ACEPTAR" />
-            </div>
-        }
-
-
+        </table>

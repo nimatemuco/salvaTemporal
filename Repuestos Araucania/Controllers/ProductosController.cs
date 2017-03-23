@@ -26,31 +26,7 @@ namespace Repuestos_Araucania.Controllers
         {
             page = 0;
             return View(await db.productos.Take(20).ToListAsync());
-        }
-
-        [HttpPost]
-
-        public string Index(IEnumerable<productos> prod)
-        {
-            if (prod.Count(x => x.MARCAR) == 0)
-            {
-                return "No ha seleccionado ningún producto!";
-            }
-            else
-            {
-                StringBuilder sb = new StringBuilder();
-                sb.Append("Has seleccionado: ");
-
-                foreach (productos p in prod)
-                {
-                    if (p.MARCAR)
-                    {
-                        sb.Append(p.NOMBRE);
-                    }
-                }
-                return sb.ToString();
-            }
-        }        
+        }       
 
         // GET: Productos/Details/5
         public async Task<ActionResult> Details(double? id)
